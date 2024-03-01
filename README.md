@@ -1,48 +1,39 @@
 # IEBS
 
-Sports Event Smart Contracts
-Objetivos y Motivación del Proyecto
-El objetivo de este proyecto es desarrollar una serie de Smart Contracts en Solidity para la gestión de eventos deportivos. La motivación radica en proporcionar una solución transparente y segura para la organización y seguimiento de eventos deportivos, incluyendo la gestión de equipos, jugadores, partidos y resultados.
+# Proyecto de Interacción con Contratos Inteligentes en Ethereum
 
-Análisis Funcional y Técnico
-Los Smart Contracts se diseñarán para permitir el registro de información sobre equipos y jugadores participantes en eventos deportivos, así como para programar y registrar partidos junto con sus resultados. Se utilizarán contratos inteligentes para garantizar la transparencia y la confiabilidad en la gestión de los eventos deportivos.
+Este proyecto consiste en interactuar con contratos inteligentes desplegados en la red Ethereum (Rinkeby) utilizando Python y Remix.
 
-Documentación Explicativa de los Smart Contracts y sus Funciones
-TeamRegistry.sol
-Este contrato registra la información de los equipos participantes en el evento deportivo.
+## Objetivos y Motivación del Proyecto
 
-Funciones:
-addTeam: Agrega un nuevo equipo al registro.
-getTeam: Obtiene la información de un equipo dado su ID.
-updateTeam: Actualiza la información de un equipo existente.
-PlayerRegistry.sol
-Este contrato registra la información de los jugadores pertenecientes a los equipos participantes.
+El objetivo de este proyecto es demostrar cómo interactuar con contratos inteligentes en la red Ethereum utilizando Python y Remix. Se utilizarán herramientas como Web3.py para la interacción con la red Ethereum y Remix para la compilación y despliegue de los contratos inteligentes.
 
-Funciones:
-addPlayer: Agrega un nuevo jugador al registro.
-getPlayer: Obtiene la información de un jugador dado su ID.
-updatePlayer: Actualiza la información de un jugador existente.
-MatchRegistry.sol
-Este contrato permite registrar los partidos y sus resultados.
+## Configuración del Proyecto
 
-Funciones:
-scheduleMatch: Programa un nuevo partido con los equipos y la fecha especificados.
-recordResult: Registra el resultado de un partido, incluyendo el marcador y los jugadores destacados.
-getMatchResult: Obtiene el resultado de un partido dado su ID.
-Guía para la Compilación, Despliegue y Verificación de los Smart Contracts del Proyecto
-Para compilar, desplegar y verificar los Smart Contracts, sigue estos pasos:
+### Configuración de Remix
 
-Instalación de Dependencias:
+1. Abre Remix en tu navegador utilizando el siguiente enlace: [Remix IDE](https://remix.ethereum.org/#lang=es&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.24+commit.e11b9ed9.js)
+2. Selecciona el compilador adecuado y asegúrate de que estás conectado a la red Ethereum (Rinkeby) utilizando la opción "Injected Web3".
 
-Instala Node.js si no lo tienes instalado.
-Ejecuta npm install para instalar las dependencias del proyecto.
-Compilación de los Contratos:
+### Configuración de Web3.py
 
-Ejecuta npx hardhat compile para compilar los contratos.
-Despliegue de los Contratos:
+1. Instala Web3.py utilizando pip:
 
-Configura tu archivo hardhat.config.js con la red Ethereum deseada.
-Ejecuta npx hardhat run scripts/deploy.js --network <nombre_de_la_red> para desplegar los contratos en la red especificada.
-Verificación de los Contratos:
+2. Configura tu proveedor de Ethereum (Rinkeby) en el código Python donde se interactuará con los contratos inteligentes.
 
-Después de desplegar los contratos, ejecuta npx hardhat run scripts/verify.js --network <nombre_de_la_red> para verificar los contratos en el explorador de bloques.
+## Descripción de los Smart Contracts
+
+En este proyecto, interactuaremos con un contrato inteligente llamado `DataRegistry`, que permite añadir y consultar datos de diferente tipo, como números, texto y booleanos.
+
+## Guía para la Interacción con los Smart Contracts
+
+1. Compila y despliega el contrato `DataRegistry` en Remix utilizando la opción "Injected Web3".
+2. Obtén la dirección del contrato y el ABI después de desplegarlo.
+3. Configura tu proveedor de Ethereum (Rinkeby) y tu dirección de Ethereum en el código Python.
+4. Interactúa con el contrato utilizando el código Python proporcionado en este repositorio. Asegúrate de reemplazar la dirección del contrato, el ABI y otros parámetros con los tuyos.
+
+## Enlaces de Explorador de Bloques
+
+- Contrato `DataRegistry` en Etherscan: [Dirección del Contrato](https://etherscan.io/address/0x123456789ABCDEF...)
+- Transacciones del Contrato `DataRegistry` en Etherscan: [Transacciones](https://etherscan.io/address/0x123456789ABCDEF...)
+
