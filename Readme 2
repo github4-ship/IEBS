@@ -1,0 +1,39 @@
+# DEX (Exchange descentralizado) con AMM (Automated Market Maker)
+
+Este proyecto implementa un Exchange descentralizado (DEX) con un Automated Market Maker (AMM) utilizando Solidity y Hardhat.
+
+## Descripción del Caso
+
+El DEX permite a los usuarios intercambiar tokens ERC20 de manera descentralizada, eliminando la necesidad de intermediarios y proporcionando liquidez a través del modelo AMM.
+
+### Funcionalidades Principales:
+- Depositar y retirar tokens ERC20.
+- Crear órdenes de límite y de mercado.
+- Intercambiar tokens ERC20.
+
+## Guía de Uso
+
+### Requisitos Previos
+- Node.js y npm instalados en tu sistema.
+- Hardhat instalado globalmente (`npm install -g hardhat`).
+
+### Pasos para Compilar y Desplegar los Contratos
+1. Clona este repositorio: `git clone <URL_del_repositorio>`
+2. Instala las dependencias: `npm install`
+3. Compila los contratos: `npx hardhat compile`
+4. Despliega los contratos en una red de prueba: `npx hardhat run scripts/deploy.js --network <nombre_de_la_red_de_prueba>`
+5. Verifica los contratos en un explorador de bloques.
+
+### Interacción con los Contratos
+- Utiliza los métodos proporcionados por los contratos desplegados para depositar, retirar y realizar intercambios de tokens ERC20.
+
+## Desarrollo en Solidity
+
+Los contratos inteligentes están escritos en Solidity y se encuentran en el directorio `contracts`.
+
+- `DEX.sol`: Contiene la lógica del DEX y utiliza el modelo AMM para determinar los precios de los tokens.
+- Otros contratos pueden ser agregados según sea necesario.
+
+## Contribución
+Si encuentras algún problema o deseas contribuir con este proyecto, por favor abre un issue o envía un pull request.
+
