@@ -1,0 +1,38 @@
+# Contrato de ICO (Initial Coin Offering)
+
+Este proyecto implementa un contrato de ICO utilizando Solidity y Hardhat.
+
+## Descripción del Caso
+
+El contrato de ICO permite a los inversores adquirir tokens ERC20 a cambio de ether (ETH) durante un periodo de tiempo determinado. La ICO se realiza de manera descentralizada, permitiendo a cualquier persona participar en la venta de tokens.
+
+### Funcionalidades Principales:
+- Inversores pueden enviar ether al contrato de ICO para comprar tokens.
+- El contrato mantiene un registro de la cantidad de ether recibido de cada inversor.
+- Los inversores pueden reclamar sus tokens adquiridos después de que la ICO finalice.
+
+## Guía de Uso
+
+### Requisitos Previos
+- Node.js y npm instalados en tu sistema.
+- Hardhat instalado globalmente (`npm install -g hardhat`).
+
+### Pasos para Compilar y Desplegar los Contratos
+1. Clona este repositorio: `git clone <URL_del_repositorio>`
+2. Instala las dependencias: `npm install`
+3. Compila los contratos: `npx hardhat compile`
+4. Despliega los contratos en una red de prueba: `npx hardhat run scripts/deploy.js --network <nombre_de_la_red_de_prueba>`
+5. Verifica los contratos en un explorador de bloques.
+
+### Interacción con los Contratos
+- Utiliza los métodos proporcionados por los contratos desplegados para participar en la ICO y reclamar tus tokens.
+
+## Desarrollo en Solidity
+
+Los contratos inteligentes están escritos en Solidity y se encuentran en el directorio `contracts`.
+
+- `ICO.sol`: Contiene la lógica del contrato de ICO.
+- Otros contratos pueden ser agregados según sea necesario.
+
+## Contribución
+Si encuentras algún problema o deseas contribuir con este proyecto, por favor abre un issue o envía un pull request.
